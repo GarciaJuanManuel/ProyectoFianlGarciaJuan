@@ -104,3 +104,51 @@ nav {
 .pokemonHover:hover {
     transform: scale(1.1);
 }
+
+
+.btn-atrapar {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+.btn-atrapar:hover {
+    background-color: #45a049; 
+}
+
+
+.btn-liberar {
+    background-color: #FF6347; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn-liberar:hover {
+    background-color: #FF4500; 
+}
+
+
+.btn-liberar-uno {
+    background-color: #FFA07A;
+}
+
+
+.btn-liberar-todos {
+    background-color: #FF4500; 
+}

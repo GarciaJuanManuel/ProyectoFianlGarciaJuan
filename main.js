@@ -39,7 +39,7 @@ const renderPokemones = (pokemones) => {
                 <span class='id'>${id}</span>
                 <h3 class='nombre'>${nombreCapitalizado}</h3>
                 <div>
-                    <button onclick="atraparPokemon(${id})">
+                    <button class="btn-atrapar" onclick="atraparPokemon(${id})">
                         <p>Atrapar pokemon</p>
                     </button>
                 </div>
