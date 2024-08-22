@@ -57,7 +57,7 @@ const atraparPokemon = (id) => {
     
     
     if (!pokemon) {
-        console.error(`Pokemon with id ${id} not found`);
+        console.error(`Error con id: ${id}`);
         return;
     }
     

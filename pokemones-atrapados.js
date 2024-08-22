@@ -99,7 +99,7 @@ const liberarTodos = (id) => {
     
     if (pokemonIndex !== -1) {
         Swal.fire({
-            title: "Desea liberar todos los Pokémon?",
+            title: "Desea liberar todos los Pokemones?",
             icon: "warning",
             showCancelButton: true,
             confirmButtonText: "Sí",
@@ -108,7 +108,7 @@ const liberarTodos = (id) => {
             if (result.isConfirmed) {
                 pokemonesAtrapados.splice(pokemonIndex, 1);
                 Swal.fire({
-                    title: "Todos los Pokémon liberados",
+                    title: "Todos los Pokemones fueron liberados",
                     icon: "success",
                     confirmButtonText: "Aceptar",
                     timer: 3000,
