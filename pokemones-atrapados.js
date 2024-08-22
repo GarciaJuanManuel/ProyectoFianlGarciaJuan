@@ -85,6 +85,7 @@ const liberarPokemon = (id) => {
                         confirmButtonText: "Aceptar",
                         timer: 3000,
                     });
+                    localStorage.setItem("pokemonesAtrapados", JSON.stringify(pokemonesAtrapados));
                     renderPokemonesAtrapados(pokemonesAtrapados);
                 }
             });
