@@ -3,26 +3,25 @@ const pokemonsNumbers = 100;
 let pokemones = [];
 let pokemonesAtrapados = JSON.parse(localStorage.getItem("pokemonesAtrapados")) || [];
 
-// Función para obtener los Pokémon
+
 const fetchPokemones = async () => {
     for (let i = 1; i <= pokemonsNumbers; i++) {
         await getPokemon(i);
     }
 }
 
-// Obtener un Pokémon por ID
 const getPokemon = async (id) => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const res = await fetch(url);
     const pokemon = await res.json();
     pokemones.push(pokemon);
-    renderPokemones(pokemones); // Cambié a pasar el array completo en vez de un Pokémon
+    renderPokemones(pokemones);
 }
 
-// Renderizar Pokémon
+
 const renderPokemones = (pokemones) => {
     const pokeContainer = document.getElementById('poke-container');
-    pokeContainer.innerHTML = ''; // Limpiar el contenedor
+    pokeContainer.innerHTML = ''; 
 
     pokemones.forEach(pokemon => {
         const { name, types, id, sprites } = pokemon;
@@ -52,7 +51,7 @@ const renderPokemones = (pokemones) => {
 
 fetchPokemones();
 
-// Función para atrapar un Pokémon
+
 const atraparPokemon = (id) => {
     let pokemon = pokemones.find((elemento) => elemento.id === id);
     
@@ -86,7 +85,6 @@ const atraparPokemon = (id) => {
     console.log(pokemonesAtrapados);
 }
 
-// Función para buscar Pokémon
 const inputSearch = document.getElementById("search");
 if (inputSearch) {
     inputSearch.addEventListener("input", (evento) => {
